@@ -1,0 +1,143 @@
+outputs_105 = "charges_105/permittivity_{perm}/outputs.json"
+
+all_105_outputs = expand(outputs_105, perm = ['1', '4', '7', '10', '13',
+                                    '16', '19', '22', '25', '28',
+                                     '50', '75', '100', '2', '65', '85'])
+
+inputs_105 = "charges_105/permittivity_{perm}/inputs.json"
+
+all_105_inputs = expand(inputs_105, perm = ['1', '4', '7', '10', '13',
+                                    '16', '19', '22', '25', '28',
+                                     '50', '75', '100', '2', '65', '85'])
+
+outputs_210_421_2109 = "charges_{charges}/permittivity_{perm}/outputs.json"
+
+all_210_421_2109_outputs = expand(outputs_210_421_2109, perm = ['1', '4', '7', '10', '13',
+                                    '16', '19', '22', '25', '28',
+                                     '50', '75', '100', '2'], charges = [210, 421, 2109])
+
+inputs_210_421_2109 = "charges_{charges}/permittivity_{perm}/inputs.json"
+
+all_210_421_2109_inputs = expand(inputs_210_421_2109, perm = ['1', '4', '7', '10', '13',
+                                    '16', '19', '22', '25', '28',
+                                     '50', '75', '100', '2'], charges = [210, 421, 2109])
+
+all_collated_distributions = "averaged_distributions/{charges}_charges_distributions_errors.json"
+
+all_collated_distribution_files = expand(all_collated_distributions, charges = [105,210, 421, 2109])
+
+permittivities_105 = [1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 50, 75, 100, 2, 65, 85]
+
+permittivities = [1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 50, 75, 100, 2]
+
+charges = [105, 210, 421, 2109]
+
+Figures = ["Figures/Overscreening.pdf", "Figures/Overscreening_logarithmic.pdf",
+            "Figures/Underscreening_Wigner_Seitz.pdf", "Figures/Underscreening_Gamma.pdf"]
+
+nu_analysis = "nu_analysis_results.json"
+
+rule all:
+  input:
+    all_collated_distribution_files,
+    all_105_inputs,
+    all_210_421_2109_inputs,
+    all_105_outputs,
+    all_210_421_2109_outputs,
+    # Figures,
+    # nu_analysis
+
+
+rule create_averaged_distributions:
+    input:
+        "extract_average_distributions.py"
+    output:
+        ["averaged_distributions/{}_charges_distributions_errors.json".format(c) for c in charges],
+    run:
+        shell("python extract_average_distributions.py")
+
+rule inputs_105:
+  input:"averaged_distributions/105_charges_distributions_errors.json"
+
+  output:
+    ["charges_105/permittivity_{}/inputs.json".format(perm) for perm in permittivities_105],
+
+  run:
+    shell("python make_inputs/make_inputs_105.py . ")
+
+rule inputs_210:
+  input: "averaged_distributions/210_charges_distributions_errors.json"
+  output:
+    ["charges_210/permittivity_{}/inputs.json".format(perm) for perm in permittivities],
+
+  run:
+    shell("python make_inputs/make_inputs_210.py . ")
+
+rule inputs_421:
+  input: "averaged_distributions/421_charges_distributions_errors.json"
+  output:
+    ["charges_421/permittivity_{}/inputs.json".format(perm) for perm in permittivities],
+
+  run:
+    shell("python make_inputs/make_inputs_421.py . ")
+
+rule inputs_2109:
+  input: "averaged_distributions/2109_charges_distributions_errors.json"
+  output:
+    ["charges_2109/permittivity_{}/inputs.json".format(perm) for perm in permittivities],
+
+  run:
+    shell("python make_inputs/make_inputs_2109.py . ")
+
+
+rule simulations_105:
+  input: ["charges_105/permittivity_{}/inputs.json".format(perm) for perm in permittivities]
+  output:
+    "charges_105/permittivity_{permittivity}/outputs.json"
+  run:
+    shell("cd charges_105/permittivity_{wildcards.permittivity}/ ")
+    shell("python uravu_analysis_scripts/analysis_105.py . charges_105/permittivity_{wildcards.permittivity}/inputs.json")
+
+rule simulations_210:
+  input: ["charges_210/permittivity_{}/inputs.json".format(perm) for perm in permittivities]
+  output:
+    "charges_210/permittivity_{permittivity}/outputs.json"
+  run:
+    shell("cd charges_210/permittivity_{wildcards.permittivity}/ ")
+    shell("python uravu_analysis_scripts/analysis_210.py . charges_210/permittivity_{wildcards.permittivity}/inputs.json")
+
+rule simulations_421:
+  input: ["charges_421/permittivity_{}/inputs.json".format(perm) for perm in permittivities]
+  output:
+    "charges_421/permittivity_{permittivity}/outputs.json"
+  run:
+    shell("cd charges_421/permittivity_{wildcards.permittivity}/ ")
+    shell("python uravu_analysis_scripts/analysis_421.py . charges_421/permittivity_{wildcards.permittivity}/inputs.json")
+
+
+rule simulations_2109:
+  input: ["charges_2109/permittivity_{}/inputs.json".format(perm) for perm in permittivities]
+  output:
+    "charges_2109/permittivity_{permittivity}/outputs.json"
+  run:
+    shell("cd charges_2109/permittivity_{wildcards.permittivity}/ ")
+    shell("python uravu_analysis_scripts/analysis_2109.py . charges_2109/permittivity_{wildcards.permittivity}/inputs.json")
+
+# rule overscreening_figures:
+#     input: ["charges_2109/permittivity_{}/outputs.json".format(p) for p in permittivities]
+#     output:
+#       "Figures/Overscreening.pdf", "Figures/Overscreening_logarithmic.pdf"
+#     run:
+#       shell("python overscreening_figures.py")
+#
+# charges_105_output = ["charges_105/permittivity_{}/outputs.json".format(p) for p in permittivities_105]
+# charges_210_output = ["charges_210/permittivity_{}/outputs.json".format(p) for p in permittivities]
+# charges_421_output = ["charges_421/permittivity_{}/outputs.json".format(p) for p in permittivities]
+# charges_2109_output = ["charges_2109/permittivity_{}/outputs.json".format(p) for p in permittivities]
+#
+# rule underscreening_figures:
+#     input: ["charges_105/permittivity_{}/outputs.json".format(p) for p in permittivities_105],["charges_210/permittivity_{}/outputs.json".format(p) for p in permittivities], ["charges_421/permittivity_{}/outputs.json".format(p) for p in permittivities],["charges_2109/permittivity_{}/outputs.json".format(p) for p in permittivities],
+#     output:
+#       "Figures/Underscreening_Wigner_Seitz.pdf", "Figures/Underscreening_Gamma.pdf", "nu_analysis_results.json"
+#     run:
+#       shell("python underscreening_figure.py")

@@ -1,0 +1,18 @@
+results = "/home/w/jmd80/scratch/kmc_paper_data/charges_421/permittivity_{perm}/outputs.json"
+
+all_results = expand(results, perm = ['1', '4', '7', '10', '13',
+                                    '16', '19', '22', '25', '28',
+                                     '50', '75', '100', '2'])
+
+rule all:
+  input:
+    all_results
+
+rule simulations_421:
+  input:
+  output:
+    "/home/w/jmd80/scratch/kmc_paper_data/charges_421/permittivity_{permittivity}/outputs.json"
+  run:
+    shell("cd /home/w/jmd80/scratch/kmc_paper_data/charges_421/permittivity_{wildcards.permittivity} ")
+    shell("python /home/w/jmd80/scratch/kmc_paper_data/analysis_421.py . /home/w/jmd80/scratch/kmc_paper_data/charges_421/permittivity_{wildcards.permittivity}/inputs.json")
+

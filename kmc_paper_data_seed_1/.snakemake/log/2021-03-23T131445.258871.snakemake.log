@@ -1,0 +1,20 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	create_averaged_distributions
+	1	inputs_105
+	3
+
+[Tue Mar 23 13:14:45 2021]
+rule create_averaged_distributions:
+    input: extract_average_distributions.py
+    output: averaged_distributions/105_charges_distributions_errors.json, averaged_distributions/210_charges_distributions_errors.json, averaged_distributions/421_charges_distributions_errors.json, averaged_distributions/2109_charges_distributions_errors.json
+    jobid: 1
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /Users/jmd80/kmc_paper_data/.snakemake/log/2021-03-23T131445.258871.snakemake.log

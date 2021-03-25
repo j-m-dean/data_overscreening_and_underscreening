@@ -1,0 +1,146 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 3
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	5	simulations_105
+	5	simulations_210
+	1	simulations_2109
+	3	simulations_421
+	15
+
+[Wed Mar 24 10:20:57 2021]
+rule simulations_105:
+    output: charges_105/permittivity_16/outputs.json
+    jobid: 11
+    wildcards: permittivity=16
+
+[Wed Mar 24 10:20:57 2021]
+rule simulations_2109:
+    output: charges_2109/permittivity_4/outputs.json
+    jobid: 27
+    wildcards: permittivity=4
+
+[Wed Mar 24 10:20:57 2021]
+rule simulations_210:
+    output: charges_210/permittivity_13/outputs.json
+    jobid: 34
+    wildcards: permittivity=13
+
+[Wed Mar 24 10:25:38 2021]
+Finished job 27.
+1 of 15 steps (7%) done
+
+[Wed Mar 24 10:25:38 2021]
+rule simulations_421:
+    output: charges_421/permittivity_75/outputs.json
+    jobid: 56
+    wildcards: permittivity=75
+
+[Wed Mar 24 10:26:41 2021]
+Finished job 34.
+2 of 15 steps (13%) done
+
+[Wed Mar 24 10:26:41 2021]
+rule simulations_210:
+    output: charges_210/permittivity_100/outputs.json
+    jobid: 58
+    wildcards: permittivity=100
+
+[Wed Mar 24 10:39:11 2021]
+Finished job 11.
+3 of 15 steps (20%) done
+
+[Wed Mar 24 10:39:11 2021]
+rule simulations_210:
+    output: charges_210/permittivity_22/outputs.json
+    jobid: 43
+    wildcards: permittivity=22
+
+[Wed Mar 24 10:57:32 2021]
+Finished job 43.
+4 of 15 steps (27%) done
+
+[Wed Mar 24 10:57:32 2021]
+rule simulations_105:
+    output: charges_105/permittivity_22/outputs.json
+    jobid: 13
+    wildcards: permittivity=22
+
+[Wed Mar 24 11:17:09 2021]
+Finished job 13.
+5 of 15 steps (33%) done
+
+[Wed Mar 24 11:17:09 2021]
+rule simulations_210:
+    output: charges_210/permittivity_7/outputs.json
+    jobid: 28
+    wildcards: permittivity=7
+
+[Wed Mar 24 11:21:33 2021]
+Finished job 28.
+6 of 15 steps (40%) done
+
+[Wed Mar 24 11:21:33 2021]
+rule simulations_105:
+    output: charges_105/permittivity_2/outputs.json
+    jobid: 19
+    wildcards: permittivity=2
+
+[Wed Mar 24 11:25:56 2021]
+Finished job 19.
+7 of 15 steps (47%) done
+
+[Wed Mar 24 11:25:56 2021]
+rule simulations_421:
+    output: charges_421/permittivity_10/outputs.json
+    jobid: 32
+    wildcards: permittivity=10
+
+[Wed Mar 24 11:30:50 2021]
+Finished job 32.
+8 of 15 steps (53%) done
+
+[Wed Mar 24 11:30:50 2021]
+rule simulations_105:
+    output: charges_105/permittivity_85/outputs.json
+    jobid: 21
+    wildcards: permittivity=85
+
+[Wed Mar 24 11:35:26 2021]
+Finished job 21.
+9 of 15 steps (60%) done
+
+[Wed Mar 24 11:35:26 2021]
+rule simulations_421:
+    output: charges_421/permittivity_16/outputs.json
+    jobid: 38
+    wildcards: permittivity=16
+
+[Wed Mar 24 11:40:19 2021]
+Finished job 38.
+10 of 15 steps (67%) done
+
+[Wed Mar 24 11:40:19 2021]
+rule simulations_105:
+    output: charges_105/permittivity_19/outputs.json
+    jobid: 12
+    wildcards: permittivity=19
+
+[Wed Mar 24 11:51:11 2021]
+Finished job 12.
+11 of 15 steps (73%) done
+
+[Wed Mar 24 11:51:11 2021]
+rule simulations_210:
+    output: charges_210/permittivity_28/outputs.json
+    jobid: 49
+    wildcards: permittivity=28
+
+[Wed Mar 24 12:03:39 2021]
+Finished job 49.
+12 of 15 steps (80%) done
+Terminating processes on user request, this might take some time.
+Complete log: /Users/jmd80/kmc_paper_data/.snakemake/log/2021-03-24T102057.904113.snakemake.log
