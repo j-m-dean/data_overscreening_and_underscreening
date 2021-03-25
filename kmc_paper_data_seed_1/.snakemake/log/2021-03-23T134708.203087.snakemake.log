@@ -1,3 +1,0 @@
-NameError in line 54 of /Users/jmd80/kmc_paper_data/Snakefile:
-name 'permittvities_105' is not defined
-  File "/Users/jmd80/kmc_paper_data/Snakefile", line 54, in <module>

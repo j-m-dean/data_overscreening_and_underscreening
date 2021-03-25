@@ -1,3 +1,0 @@
-NameError in line 15 of /Users/jmd80/kmc_paper_data/Snakefile:
-name 'results_210_421_2109' is not defined
-  File "/Users/jmd80/kmc_paper_data/Snakefile", line 15, in <module>
