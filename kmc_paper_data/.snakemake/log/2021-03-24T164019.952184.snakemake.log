@@ -1,0 +1,38 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 3
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	overscreening_figures
+	16	simulations_105
+	14	simulations_210
+	14	simulations_2109
+	14	simulations_421
+	1	underscreening_figures
+	61
+
+[Wed Mar 24 16:40:20 2021]
+rule simulations_421:
+    input: charges_421/permittivity_1/inputs.json, charges_421/permittivity_4/inputs.json, charges_421/permittivity_7/inputs.json, charges_421/permittivity_10/inputs.json, charges_421/permittivity_13/inputs.json, charges_421/permittivity_16/inputs.json, charges_421/permittivity_19/inputs.json, charges_421/permittivity_22/inputs.json, charges_421/permittivity_25/inputs.json, charges_421/permittivity_28/inputs.json, charges_421/permittivity_50/inputs.json, charges_421/permittivity_75/inputs.json, charges_421/permittivity_100/inputs.json, charges_421/permittivity_2/inputs.json
+    output: charges_421/permittivity_22/outputs.json
+    jobid: 44
+    wildcards: permittivity=22
+
+[Wed Mar 24 16:40:20 2021]
+rule simulations_421:
+    input: charges_421/permittivity_1/inputs.json, charges_421/permittivity_4/inputs.json, charges_421/permittivity_7/inputs.json, charges_421/permittivity_10/inputs.json, charges_421/permittivity_13/inputs.json, charges_421/permittivity_16/inputs.json, charges_421/permittivity_19/inputs.json, charges_421/permittivity_22/inputs.json, charges_421/permittivity_25/inputs.json, charges_421/permittivity_28/inputs.json, charges_421/permittivity_50/inputs.json, charges_421/permittivity_75/inputs.json, charges_421/permittivity_100/inputs.json, charges_421/permittivity_2/inputs.json
+    output: charges_421/permittivity_100/outputs.json
+    jobid: 59
+    wildcards: permittivity=100
+
+[Wed Mar 24 16:40:20 2021]
+rule simulations_421:
+    input: charges_421/permittivity_1/inputs.json, charges_421/permittivity_4/inputs.json, charges_421/permittivity_7/inputs.json, charges_421/permittivity_10/inputs.json, charges_421/permittivity_13/inputs.json, charges_421/permittivity_16/inputs.json, charges_421/permittivity_19/inputs.json, charges_421/permittivity_22/inputs.json, charges_421/permittivity_25/inputs.json, charges_421/permittivity_28/inputs.json, charges_421/permittivity_50/inputs.json, charges_421/permittivity_75/inputs.json, charges_421/permittivity_100/inputs.json, charges_421/permittivity_2/inputs.json
+    output: charges_421/permittivity_7/outputs.json
+    jobid: 29
+    wildcards: permittivity=7
+
+Terminating processes on user request, this might take some time.
+Complete log: /Users/jmd80/kmc_paper_data_seed_1/.snakemake/log/2021-03-24T164019.952184.snakemake.log

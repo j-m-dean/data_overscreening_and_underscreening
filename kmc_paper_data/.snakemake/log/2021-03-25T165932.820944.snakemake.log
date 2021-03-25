@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in line 52 of /Users/jmd80/kmc_GBs_data/kmc_paper_data_seed_1/Snakefile:
+Wildcards in input files cannot be determined from output files:
+'perm'

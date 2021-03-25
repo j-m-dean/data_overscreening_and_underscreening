@@ -1,0 +1,3 @@
+CreateRuleException in line 177 of /Users/jmd80/kmc_GBs_data/kmc_paper_data_seed_1/Snakefile:
+The name underscreening_figures is already used by another rule
+  File "/Users/jmd80/kmc_GBs_data/kmc_paper_data_seed_1/Snakefile", line 177, in <module>

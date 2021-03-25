@@ -1,0 +1,1 @@
+{"number_of_free_charges": 105, "charge_of_free_charges": 1, "chain_length": 75, "number_of_kmc_steps": 1500000, "lattice_constant": 4.72432, "linear_hop_evaluation_scale": 1.0, "max_number_of_neighbours": 6, "A": 0.002419, "B": -1059.648087248322, "C": 0.01, "D": 0, "F": 1, "barrier_depth": 0.0018375, "E_hop": 0.0110248}

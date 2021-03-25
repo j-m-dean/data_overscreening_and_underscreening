@@ -1,0 +1,3 @@
+NameError in line 134 of /Users/jmd80/kmc_paper_data_seed_1/Snakefile:
+name 'permittivitie' is not defined
+  File "/Users/jmd80/kmc_paper_data_seed_1/Snakefile", line 134, in <module>

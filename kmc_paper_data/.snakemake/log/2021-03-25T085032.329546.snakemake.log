@@ -1,0 +1,2 @@
+SyntaxError in line 140 of /Users/jmd80/kmc_paper_data_seed_1/Snakefile:
+Expecting rule keyword, comment or docstrings inside a rule definition. (Snakefile, line 140)

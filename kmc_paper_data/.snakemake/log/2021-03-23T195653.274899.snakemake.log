@@ -1,0 +1,3 @@
+NameError in line 40 of /Users/jmd80/kmc_paper_data/Snakefile:
+name 'all_105_outputs' is not defined
+  File "/Users/jmd80/kmc_paper_data/Snakefile", line 40, in <module>

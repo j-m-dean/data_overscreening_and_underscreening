@@ -1,0 +1,220 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	15	simulations_105
+	6	simulations_210
+	22
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_100/outputs.json
+    jobid: 16
+    wildcards: permittivity=100
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_65/outputs.json
+    jobid: 18
+    wildcards: permittivity=65
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_210:
+    input: charges_210/permittivity_1/inputs.json, charges_210/permittivity_4/inputs.json, charges_210/permittivity_7/inputs.json, charges_210/permittivity_10/inputs.json, charges_210/permittivity_13/inputs.json, charges_210/permittivity_16/inputs.json, charges_210/permittivity_19/inputs.json, charges_210/permittivity_22/inputs.json, charges_210/permittivity_25/inputs.json, charges_210/permittivity_28/inputs.json, charges_210/permittivity_50/inputs.json, charges_210/permittivity_75/inputs.json, charges_210/permittivity_100/inputs.json, charges_210/permittivity_2/inputs.json
+    output: charges_210/permittivity_75/outputs.json
+    jobid: 31
+    wildcards: permittivity=75
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_4/outputs.json
+    jobid: 5
+    wildcards: permittivity=4
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_16/outputs.json
+    jobid: 9
+    wildcards: permittivity=16
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_22/outputs.json
+    jobid: 11
+    wildcards: permittivity=22
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_28/outputs.json
+    jobid: 13
+    wildcards: permittivity=28
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_10/outputs.json
+    jobid: 7
+    wildcards: permittivity=10
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_75/outputs.json
+    jobid: 15
+    wildcards: permittivity=75
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_7/outputs.json
+    jobid: 6
+    wildcards: permittivity=7
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_1/outputs.json
+    jobid: 4
+    wildcards: permittivity=1
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_85/outputs.json
+    jobid: 19
+    wildcards: permittivity=85
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_13/outputs.json
+    jobid: 8
+    wildcards: permittivity=13
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_19/outputs.json
+    jobid: 10
+    wildcards: permittivity=19
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_25/outputs.json
+    jobid: 12
+    wildcards: permittivity=25
+
+[Thu Mar 25 09:34:59 2021]
+rule simulations_105:
+    input: charges_105/permittivity_1/inputs.json, charges_105/permittivity_4/inputs.json, charges_105/permittivity_7/inputs.json, charges_105/permittivity_10/inputs.json, charges_105/permittivity_13/inputs.json, charges_105/permittivity_16/inputs.json, charges_105/permittivity_19/inputs.json, charges_105/permittivity_22/inputs.json, charges_105/permittivity_25/inputs.json, charges_105/permittivity_28/inputs.json, charges_105/permittivity_50/inputs.json, charges_105/permittivity_75/inputs.json, charges_105/permittivity_100/inputs.json, charges_105/permittivity_2/inputs.json
+    output: charges_105/permittivity_50/outputs.json
+    jobid: 14
+    wildcards: permittivity=50
+
+[Thu Mar 25 09:44:49 2021]
+Finished job 6.
+1 of 22 steps (5%) done
+
+[Thu Mar 25 09:44:49 2021]
+rule simulations_210:
+    input: charges_210/permittivity_1/inputs.json, charges_210/permittivity_4/inputs.json, charges_210/permittivity_7/inputs.json, charges_210/permittivity_10/inputs.json, charges_210/permittivity_13/inputs.json, charges_210/permittivity_16/inputs.json, charges_210/permittivity_19/inputs.json, charges_210/permittivity_22/inputs.json, charges_210/permittivity_25/inputs.json, charges_210/permittivity_28/inputs.json, charges_210/permittivity_50/inputs.json, charges_210/permittivity_75/inputs.json, charges_210/permittivity_100/inputs.json, charges_210/permittivity_2/inputs.json
+    output: charges_210/permittivity_19/outputs.json
+    jobid: 26
+    wildcards: permittivity=19
+
+[Thu Mar 25 09:45:00 2021]
+Finished job 5.
+2 of 22 steps (9%) done
+
+[Thu Mar 25 09:45:00 2021]
+rule simulations_210:
+    input: charges_210/permittivity_1/inputs.json, charges_210/permittivity_4/inputs.json, charges_210/permittivity_7/inputs.json, charges_210/permittivity_10/inputs.json, charges_210/permittivity_13/inputs.json, charges_210/permittivity_16/inputs.json, charges_210/permittivity_19/inputs.json, charges_210/permittivity_22/inputs.json, charges_210/permittivity_25/inputs.json, charges_210/permittivity_28/inputs.json, charges_210/permittivity_50/inputs.json, charges_210/permittivity_75/inputs.json, charges_210/permittivity_100/inputs.json, charges_210/permittivity_2/inputs.json
+    output: charges_210/permittivity_22/outputs.json
+    jobid: 27
+    wildcards: permittivity=22
+
+[Thu Mar 25 09:45:23 2021]
+Finished job 4.
+3 of 22 steps (14%) done
+
+[Thu Mar 25 09:45:23 2021]
+rule simulations_210:
+    input: charges_210/permittivity_1/inputs.json, charges_210/permittivity_4/inputs.json, charges_210/permittivity_7/inputs.json, charges_210/permittivity_10/inputs.json, charges_210/permittivity_13/inputs.json, charges_210/permittivity_16/inputs.json, charges_210/permittivity_19/inputs.json, charges_210/permittivity_22/inputs.json, charges_210/permittivity_25/inputs.json, charges_210/permittivity_28/inputs.json, charges_210/permittivity_50/inputs.json, charges_210/permittivity_75/inputs.json, charges_210/permittivity_100/inputs.json, charges_210/permittivity_2/inputs.json
+    output: charges_210/permittivity_28/outputs.json
+    jobid: 29
+    wildcards: permittivity=28
+
+[Thu Mar 25 09:45:33 2021]
+Finished job 19.
+4 of 22 steps (18%) done
+
+[Thu Mar 25 09:45:33 2021]
+rule simulations_210:
+    input: charges_210/permittivity_1/inputs.json, charges_210/permittivity_4/inputs.json, charges_210/permittivity_7/inputs.json, charges_210/permittivity_10/inputs.json, charges_210/permittivity_13/inputs.json, charges_210/permittivity_16/inputs.json, charges_210/permittivity_19/inputs.json, charges_210/permittivity_22/inputs.json, charges_210/permittivity_25/inputs.json, charges_210/permittivity_28/inputs.json, charges_210/permittivity_50/inputs.json, charges_210/permittivity_75/inputs.json, charges_210/permittivity_100/inputs.json, charges_210/permittivity_2/inputs.json
+    output: charges_210/permittivity_50/outputs.json
+    jobid: 30
+    wildcards: permittivity=50
+
+[Thu Mar 25 09:46:09 2021]
+Finished job 9.
+5 of 22 steps (23%) done
+
+[Thu Mar 25 09:46:09 2021]
+rule simulations_210:
+    input: charges_210/permittivity_1/inputs.json, charges_210/permittivity_4/inputs.json, charges_210/permittivity_7/inputs.json, charges_210/permittivity_10/inputs.json, charges_210/permittivity_13/inputs.json, charges_210/permittivity_16/inputs.json, charges_210/permittivity_19/inputs.json, charges_210/permittivity_22/inputs.json, charges_210/permittivity_25/inputs.json, charges_210/permittivity_28/inputs.json, charges_210/permittivity_50/inputs.json, charges_210/permittivity_75/inputs.json, charges_210/permittivity_100/inputs.json, charges_210/permittivity_2/inputs.json
+    output: charges_210/permittivity_100/outputs.json
+    jobid: 32
+    wildcards: permittivity=100
+
+[Thu Mar 25 09:46:11 2021]
+Finished job 18.
+6 of 22 steps (27%) done
+[Thu Mar 25 09:46:15 2021]
+Finished job 13.
+7 of 22 steps (32%) done
+[Thu Mar 25 09:54:59 2021]
+Finished job 26.
+8 of 22 steps (36%) done
+[Thu Mar 25 09:55:06 2021]
+Finished job 8.
+9 of 22 steps (41%) done
+[Thu Mar 25 09:59:50 2021]
+Finished job 16.
+10 of 22 steps (45%) done
+[Thu Mar 25 10:00:40 2021]
+Finished job 7.
+11 of 22 steps (50%) done
+[Thu Mar 25 10:10:43 2021]
+Finished job 11.
+12 of 22 steps (55%) done
+[Thu Mar 25 10:22:22 2021]
+Finished job 12.
+13 of 22 steps (59%) done
+[Thu Mar 25 10:29:14 2021]
+Finished job 27.
+14 of 22 steps (64%) done
+[Thu Mar 25 10:32:41 2021]
+Finished job 14.
+15 of 22 steps (68%) done
+[Thu Mar 25 10:34:44 2021]
+Finished job 10.
+16 of 22 steps (73%) done
+[Thu Mar 25 11:45:24 2021]
+Finished job 29.
+17 of 22 steps (77%) done
+[Thu Mar 25 12:12:55 2021]
+Finished job 30.
+18 of 22 steps (82%) done
+[Thu Mar 25 13:23:31 2021]
+Finished job 31.
+19 of 22 steps (86%) done
