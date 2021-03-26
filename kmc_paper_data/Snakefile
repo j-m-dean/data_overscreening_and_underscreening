@@ -198,5 +198,5 @@ rule clear:
             shell("rm charges_105/permittivity_{}/corner_oscillatory.pdf".format(perm))
 
         shell("rm Figures/*")
-        shell("rm bayes_and_evidence.csv")
+        shell("rm evidence_and_bayes.csv")
         shell("rm nu_analysis_results.json")
