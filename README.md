@@ -27,7 +27,7 @@ Note however, that depending on the number of cores devoted to calculating the a
 - `kmc_paper_data/bayes_and_evidence.py`: Script that extracts Bayes factors and evidence values.
 - `kmc_paper_data/evidence_and_bayes.csv`: Tabulated evidence and Bayes factor values.
 - `kmc_paper_data/extract_average_distributions.py`: Script that extracts averaged distributions from simulated results.
-- `kmc_paper_data/nu_analysis_results.json`: Results for the analysis of $\nu$ in Figs. 3 and S2.
+- `kmc_paper_data/nu_analysis_results.json`: the results of the uravu nu analysis.
 - `kmc_paper_data/overscreening_figure.py`: Script to produce the overscreening figures.
 - `kmc_paper_data/underscreening_figures.py`: Script to produce the underscreening figures.
 ## Data processing workflow
@@ -36,3 +36,7 @@ Data processing is mostly managed using [`snakemake`](https://snakemake.readthed
 snakemake --cores all clear
 snakemake --cores all
 ```
+
+## Full data workflow
+
+Kinetic Monte Carlo simulations returned a `kmc_output.json` file with the simulation trajectory, these files are not made available in this repository due the large size of the files. From the simulation trajectory a time-averaged distribution of charges is calculated as an array of length 75, and stored in an `average_occupancy.json` file for each individual simulation trajectory. These `average_occupancy.json` files are stored in the `kmc_paper_data/simulation_data` directory. From these `average_occupacy.json` files we calculate the average half space-charge distribution (assuming a symmetric distribution around the grain boundary). These average half space-charge distributions, along with associated errors for each distance from the grain boundary, are stored in the `kmc_paper_data/averaged_distributions` directory. These averaged half space-charge distributions and associated standard error values are used as inputs into uravu to conduct Bayesian analysis. The Bayesian analysis outputs distributions for each parameter of both models. These outputs are stored in `kmc_paper_data/charges_X/permittivity_Y/outputs.json` directories where X = (number of charges) and Y = (relative permittivity). Corner plots of these distributions are stored in the same location. The maximum likelihood parameter and 95% confidence interval are used to plot Fig. 3. The full distributions of the appropriate alpha parameter are used to calculate the value of nu. The results of the nu analysis are stored in the `nu_analysis_results.json` file.  
