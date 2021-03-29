@@ -39,7 +39,7 @@ snakemake --cores all
 
 ## Overview of the full data workflow
 
-<img src="./README_figures/Data_Workflow.pdf" alt="./README_figures/Data_Workflow.pdf" width="400"/>
+![](README_figures/Data_Workflow.pdf)
 
 The data work flow can be described be seen in the image above and is described below. 
 
