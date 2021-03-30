@@ -6,7 +6,7 @@ This repository contains all the time-averaged distributions of every kinetic Mo
 To run the complete data analysis, run the following commands from the kmc_paper_data directory:
 ```
 pip install -r requirements.txt
-snakemake clear
+snakemake --cores all clear
 snakemake --cores all
 ```
 Note however, that depending on the number of cores devoted to calculating the analysis, this could take anywhere between several hours and a day.
