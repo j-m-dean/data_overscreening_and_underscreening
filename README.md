@@ -1,6 +1,5 @@
-![DOI](https://zenodo.org/badge/351380765.svg)](https://zenodo.org/badge/latestdoi/351380765)
-
 # Data  for &ldquo;Overscreening and Underscreening in Solid-Electrolyte Grain Boundary Space-Charge Layers&rdquo;
+![DOI](https://zenodo.org/badge/351380765.svg)](https://zenodo.org/badge/latestdoi/351380765)
 Authors:
 - Jacob M. Dean ORCID [0000-0003-3363-4256](https://orcid.org/0000-0003-3363-4256)
 ## Summary
