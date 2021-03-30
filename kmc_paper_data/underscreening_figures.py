@@ -61,12 +61,12 @@ master_formatting = {'axes.formatter.limits': (-5,5),
                           'axes.labelsize': fontsize,
                           'axes.titlesize': fontsize,
                           'axes.grid': False,
-                          'lines.markersize': 7.0,
+                          'lines.markersize': 8.0,
                           'lines.scale_dashes': False,
                           'xtick.labelsize': fontsize,
                           'ytick.labelsize': fontsize,
                           'legend.fontsize': fontsize,
-                          'figure.figsize':[5.5,5.5]}
+                          'figure.figsize':[6.5,6.5]}
 for k, v in master_formatting.items():
     rcParams[k] = v
 color_cycle = tableau.values()
