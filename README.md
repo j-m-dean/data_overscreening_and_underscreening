@@ -2,7 +2,7 @@
 Authors:
 - Jacob M. Dean ORCID [0000-0003-3363-4256](https://orcid.org/0000-0003-3363-4256)
 ## Summary
-This repository contains all the time-averaged distributions of every kinetic Monte Carlo simulation conducted for the paper, and all the analysis required to make the figures for the paper: &ldquo;Overscreening and Underscreening in Solid-Electrolyte Grain Boundary Space-Charge Layers&rdquo (reference TODO). In addition, corner plots for each parameter set and all values of evidence and Bayes factors are provided.
+This repository contains all the time-averaged distributions of every kinetic Monte Carlo simulation conducted and all the analysis required to make the figures for the paper: &ldquo;Overscreening and Underscreening in Solid-Electrolyte Grain Boundary Space-Charge Layers&rdquo (reference TODO). In addition, corner plots for each parameter set and all values of evidence and Bayes factors are provided.
 To run the complete data analysis, run the following commands from the kmc_paper_data directory:
 ```
 pip install -r requirements.txt
@@ -43,10 +43,10 @@ snakemake --cores all
 
 The data work flow can be seen in the image above and is described below: 
 
-- Simulation trajectories from kinetic Monte Carlo simulations produce a set of `average_occupancy.json` files. The simulation trajectories for the kinetic Monte Carlo simulations are not provided here because it is impractical to store such large files here. These `average_occupancy.json` files store the time-averaged distribution of charges across a single simulation, and are located in the `kmc_paper_data/simulation_data` directory. 
+- Simulation trajectories from kinetic Monte Carlo simulations produce a set of `average_occupancy.json` files. The simulation trajectories for the kinetic Monte Carlo simulations are not provided here because it is impractical to store such large files in this repository. These `average_occupancy.json` files store the time-averaged distribution of charges across a single simulation, and are located in the `kmc_paper_data/simulation_data` directory. 
 - From these `average_occupacy.json` files we calculate the average half space-charge distribution (assuming a symmetric distribution around the grain boundary). These average half space-charge distributions, along with associated errors for each distance from the grain boundary, are stored in the `kmc_paper_data/averaged_distributions` directory.
 - These averaged distributions are used to create `kmc_paper_data/charges_X/permittivity_Y/inputs.json` files, where X = (number of charges) and Y = (relative permittivity), that are used to conduct the Bayesian analysis. 
-.-  The averaged half space-charge distributions and associated standard error values are used as inputs into uravu to conduct Bayesian analysis. The Bayesian analysis returns distributions for each parameter of both models (the oscillatory and purely exponential model). These outputs are stored in `kmc_paper_data/charges_X/permittivity_Y/outputs.json` files. Corner plots of these distributions are stored in the same location.
+-   The Bayesian analysis returns distributions for each parameter of both models (the oscillatory and purely exponential model). These outputs are stored in `kmc_paper_data/charges_X/permittivity_Y/outputs.json` files. Corner plots of these distributions are stored in the same location.
 -  Fig. 2 and Fig. S1 are produced by the `kmc_paper_data/overscreening_figures.py` file. 
 -  Fig. 3, Fig. S2 and `kmc_paper_data/nu_analysis_results.json` are produced by running `kmc_paper_data/underscreening_figures.py`. The maximum likelihood parameter and 95% confidence interval, stored in the `kmc_paper_data/charges_X/permittivity_Y/outputs.json` files, are used to plot Fig. 3 and Fig. S2. The full distributions of the appropriate alpha parameter are used to calculate the value of nu.
 -   The `kmc_paper_data/evidence_and_bayes.csv` file that tabulates all evidence and Bayes factor values is produced by the `kmc_paper_data/bayes_and_evidence.py` file. 
