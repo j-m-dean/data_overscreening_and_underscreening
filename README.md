@@ -8,7 +8,7 @@ Authors:
 - Andrew R. McCluskey ORCID [0000-0003-3381-5911](https://orcid.org/0000-0003-3381-5911)
 - Matthew J. Wolf ORCID [0000-0001-5902-4187](https://orcid.org/0000-0001-5902-4187)
 - Alison B. Walker ORCID [0000-0002-2232-9734](https://orcid.org/0000-0002-2232-9734) 
-- Benjamin J. Morgan$\dagger$ ORCID [0000-0002-3056-8233](https://orcid.org/0000-0002-3056-8233)
+- Benjamin J. Morgan* ORCID [0000-0002-3056-8233](https://orcid.org/0000-0002-3056-8233)
 
 \* https://github.com/user200000,  https://github.com/bjmorgan
 
