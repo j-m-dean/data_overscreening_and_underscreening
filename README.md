@@ -3,6 +3,12 @@
 
 Authors:
 - Jacob M. Dean ORCID [0000-0003-3363-4256](https://orcid.org/0000-0003-3363-4256)
+- Samuel W. Coles* ORCID [0000-0001-9722-5676](https://orcid.org/0000-0001-9722-5676)
+- William R. Saunders 
+- Andrew R. McCluskey ORCID [0000-0003-3381-5911](https://orcid.org/0000-0003-3381-5911)
+- Matthew J. Wolf ORCID [0000-0001-5902-4187](https://orcid.org/0000-0001-5902-4187)
+- Alison B. Walker ORCID [0000-0002-2232-9734](https://orcid.org/0000-0002-2232-9734) 
+- Benjamin J. Morgan* ORCID [0000-0002-3056-8233](https://orcid.org/0000-0002-3056-8233)
 ## Summary
 This repository contains all the time-averaged distributions of every kinetic Monte Carlo simulation conducted and all the analysis required to make the figures for the paper: &ldquo;Overscreening and Underscreening in Solid-Electrolyte Grain Boundary Space-Charge Layers&rdquo; (reference TODO). In addition, corner plots for each parameter set and all values of evidence and Bayes factors are provided.
 To run the complete data analysis, run the following commands from the kmc_paper_data directory:
