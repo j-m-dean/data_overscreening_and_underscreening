@@ -1,4 +1,4 @@
-# Data  for &ldquo;Overscreening and Underscreening in Solid-Electrolyte Grain Boundary Space-Charge Layers&rdquo;
+# Supporting dataset for &ldquo;Overscreening and Underscreening in Solid-Electrolyte Grain Boundary Space-Charge Layers&rdquo;
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4647844.svg)](https://doi.org/10.5281/zenodo.4647844)
 
 Authors:
