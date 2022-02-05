@@ -11,7 +11,7 @@ Authors:
 - Benjamin J. Morgan ORCID [0000-0002-3056-8233](https://orcid.org/0000-0002-3056-8233)
 
 ## Summary
-This repository contains all the time-averaged distributions of every kinetic Monte Carlo simulation conducted and all the analysis required to make the figures for the paper: &ldquo;Overscreening and Underscreening in Solid-Electrolyte Grain Boundary Space-Charge Layers&rdquo; (https://doi.org/10.1103/PhysRevLett.127.135502).
+This repository contains all the time-averaged distributions of every kinetic Monte Carlo simulation conducted and all the analysis required to make the figures for the paper: &ldquo;Overscreening and Underscreening in Solid-Electrolyte Grain Boundary Space-Charge Layers&rdquo; ([doi:10.1103/PhysRevLett.127.135502](https://doi.org/10.1103/PhysRevLett.127.135502)).
 Corner plots for each parameter set and all values of evidence and Bayes factors are also provided.
 
 To run the complete data analysis, run the following commands from the `kmc_paper_data` directory:
