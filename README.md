@@ -1,26 +1,27 @@
 # Supporting dataset for &ldquo;Overscreening and Underscreening in Solid-Electrolyte Grain Boundary Space-Charge Layers&rdquo;
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4647844.svg)](https://doi.org/10.5281/zenodo.4647844)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4647843.svg)](https://doi.org/10.5281/zenodo.4647843)
 
 Authors:
 - Jacob M. Dean ORCID [0000-0003-3363-4256](https://orcid.org/0000-0003-3363-4256)
-- Samuel W. Coles* ORCID [0000-0001-9722-5676](https://orcid.org/0000-0001-9722-5676)
+- Samuel W. Coles ORCID [0000-0001-9722-5676](https://orcid.org/0000-0001-9722-5676)
 - William R. Saunders 
 - Andrew R. McCluskey ORCID [0000-0003-3381-5911](https://orcid.org/0000-0003-3381-5911)
 - Matthew J. Wolf ORCID [0000-0001-5902-4187](https://orcid.org/0000-0001-5902-4187)
 - Alison B. Walker ORCID [0000-0002-2232-9734](https://orcid.org/0000-0002-2232-9734) 
-- Benjamin J. Morgan* ORCID [0000-0002-3056-8233](https://orcid.org/0000-0002-3056-8233)
-
-\* https://github.com/user200000,  https://github.com/bjmorgan
+- Benjamin J. Morgan ORCID [0000-0002-3056-8233](https://orcid.org/0000-0002-3056-8233)
 
 ## Summary
-This repository contains all the time-averaged distributions of every kinetic Monte Carlo simulation conducted and all the analysis required to make the figures for the paper: &ldquo;Overscreening and Underscreening in Solid-Electrolyte Grain Boundary Space-Charge Layers&rdquo; (reference TODO). In addition, corner plots for each parameter set and all values of evidence and Bayes factors are provided.
-To run the complete data analysis, run the following commands from the kmc_paper_data directory:
+This repository contains all the time-averaged distributions of every kinetic Monte Carlo simulation conducted and all the analysis required to make the figures for the paper: &ldquo;Overscreening and Underscreening in Solid-Electrolyte Grain Boundary Space-Charge Layers&rdquo; (https://doi.org/10.1103/PhysRevLett.127.135502).
+Corner plots for each parameter set and all values of evidence and Bayes factors are also provided.
+
+To run the complete data analysis, run the following commands from the `kmc_paper_data` directory:
 ```
 pip install -r requirements.txt
 snakemake --cores all clear
 snakemake --cores all
 ```
 Note however, that depending on the number of cores devoted to calculating the analysis, this could take anywhere between several hours and a day.
+
 ## Contents:
 - `README.md`: This file.
 - `kmc_paper_data/requirements.txt`: Python dependencies.
@@ -41,6 +42,7 @@ Note however, that depending on the number of cores devoted to calculating the a
 - `kmc_paper_data/nu_analysis_results.json`: the results of the uravu nu analysis.
 - `kmc_paper_data/overscreening_figure.py`: Script to produce the overscreening figures.
 - `kmc_paper_data/underscreening_figures.py`: Script to produce the underscreening figures.
+
 ## Data processing workflow
 Data processing is mostly managed using [`snakemake`](https://snakemake.readthedocs.io), and uses the scripts in the `kmc_paper_data` directory. The full data analysis workflow can be rerun with:
 ```
